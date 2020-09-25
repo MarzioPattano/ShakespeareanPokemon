@@ -31,7 +31,7 @@ namespace Pokemon.DataProxies
                 var result = streamReader.ReadToEnd();
                 var shakespeareResult = JsonConvert.DeserializeObject<ShakespeareResult>(result);
 
-                return shakespeareResult.contents.text;
+                return shakespeareResult.contents.translated;
             }
         }
     }
